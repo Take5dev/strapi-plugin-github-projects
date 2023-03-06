@@ -7,10 +7,10 @@ It is meant mostly for educational purposes, being built step by step in the "St
 
 ```bash
 # yarn
-yarn add @artcoded/strapi-plugin-github-projects
+yarn add @take5/strapi-plugin-github-projects
 
 # npm
-npm i @artcoded/strapi-plugin-github-projects
+npm i @take5/strapi-plugin-github-projects
 ```
 
 ## Initial configuration
