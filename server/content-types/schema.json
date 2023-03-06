@@ -1,0 +1,46 @@
+{
+    "kind": "collectionType",
+    "collectionName": "projects",
+    "info": {
+        "singularName": "project",
+        "pluralName": "projects",
+        "displayName": "Project"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "attributes": {
+        "repositoryId": {
+            "type": "uid",
+            "required": false,
+            "unique": true
+        },
+        "title": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "shortDescription": {
+            "type": "string",
+            "required": false
+        },
+        "repositoryUrl": {
+            "type": "string",
+            "required": false
+        },
+        "slug": {
+            "type": "uid",
+            "required": true,
+            "targetField": "title"
+        },
+        "longDescription": {
+            "type": "richText"
+        },
+        "coverImage": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": ["images"]
+        }
+    }
+}
